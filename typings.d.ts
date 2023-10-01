@@ -1,5 +1,6 @@
 declare module 'react-native-ico-sign-and-symbols' {
     import { ReactNode } from 'react';
+    import { SvgProps, AdditionalProps } from 'react-native-svg';
 
     type iconNames = '11-photo-s' |
       '11-weather-s' |
@@ -369,10 +370,6 @@ declare module 'react-native-ico-sign-and-symbols' {
       'musical-note-2' |
       'musical-note' |
       'national-highway' |
-      'nazi-ss-mark' |
-      'nazi-symbol-1' |
-      'nazi-symbol-2' |
-      'nazi-symbol-3' |
       'night-sky' |
       'no-drone-mark-2' |
       'no-eating-or-drinking-1' |
@@ -699,7 +696,7 @@ declare module 'react-native-ico-sign-and-symbols' {
       badge?: number | string | badgeTypeObj;
     }
 
-    const Icon: (props: IconProps) => ReactNode;
+    const Icon: (props: IconProps & SvgProps & AdditionalProps) => ReactNode;
 
     export { iconNames };
     export default Icon;

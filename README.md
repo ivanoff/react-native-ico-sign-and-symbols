@@ -2,7 +2,7 @@
 
 ### react-native-ico-sign-and-symbols
 
-666 Vector Icons for React Native
+662 Vector Icons for React Native
 
 <img src="./static/15-s-for-menu.png" alt="15-s-for-menu" width="150" height="150"> <img src="./static/16-weather-illustrations.png" alt="16-weather-illustrations" width="150" height="150"> <img src="./static/1st-place-37.png" alt="1st-place-37" width="150" height="150">
 
