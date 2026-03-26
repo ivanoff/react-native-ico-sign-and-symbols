@@ -4,7 +4,7 @@
 
 662 Vector Icons for React Native
 
-<img src="./static/15-s-for-menu.png" alt="15-s-for-menu" width="150" height="150"> <img src="./static/16-weather-illustrations.png" alt="16-weather-illustrations" width="150" height="150"> <img src="./static/1st-place-37.png" alt="1st-place-37" width="150" height="150">
+<img src="./static/stairs-12.png" alt="stairs-12" width="150" height="150"> <img src="./static/three-point-leader-2.png" alt="three-point-leader-2" width="150" height="150"> <img src="./static/download-80.png" alt="download-80" width="150" height="150">
 
 ## List of icons
 
@@ -20,14 +20,14 @@ import Icon from 'react-native-ico-sign-and-symbols';
 render() {
     return (
         <>
-          <Icon name="15-s-for-menu" />
-          <Icon name="16-weather-illustrations" height="40" width="40" />
-          <Icon name="1st-place-37" color="red" />
-          <Icon name="1st-place-37" colors={{ "#000000": "#FFFFFF" }} />
-          <Icon name="16-weather-illustrations" badge="10" />
-          <Icon name="16-weather-illustrations" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
-          <Icon name="15-s-for-menu" background="circle" />
-          <Icon name="15-s-for-menu" background={{ type: "button", color: 'green' }} />
+          <Icon name="stairs-12" />
+          <Icon name="three-point-leader-2" height="40" width="40" />
+          <Icon name="download-80" color="red" />
+          <Icon name="download-80" colors={{ "#000000": "#FFFFFF" }} />
+          <Icon name="three-point-leader-2" badge="10" />
+          <Icon name="three-point-leader-2" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
+          <Icon name="stairs-12" background="circle" />
+          <Icon name="stairs-12" background={{ type: "button", color: 'green' }} />
         </>
     );
 }
@@ -54,7 +54,9 @@ npm install --save react-native-ico-sign-and-symbols react-native-svg
 react-native link react-native-svg
 ```
 
-### pod install ( for iOS )
+`react-native-svg` is a peer dependency. Install a current version in the app so the package uses the app-level native module instead of pulling in an older nested copy.
+
+### pod install (for iOS)
 
 ```
 cd ios && pod install && cd ..
@@ -68,9 +70,9 @@ Returns a SvgXml icon by name and group.
 
  name | optional | default value | description | examples
 ------|----------|---------------|-------------|---------
-name | no |  | name of icon | "15-s-for-menu"
+name | no |  | name of icon | "stairs-12"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
-colors | yes | | replace colors | {"#FFFFFF": "#000000"} // white to black
+colors | yes | | replace colors | {"#FFFFFF": "#000000", "#f00": "#00f"} // white to black, red to blue
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40
 background | yes | | background type | "circle"
